@@ -1,0 +1,11 @@
+{
+  "name": "@aifleet-tsnode/b",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "run -T tsc --build"
+  }
+}

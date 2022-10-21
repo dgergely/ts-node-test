@@ -1,0 +1,15 @@
+{
+  "name": "@aifleet-tsnode/a",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "dependencies": {
+    "@aifleet-tsnode/b": "workspace:*"
+  },
+  "scripts": {
+    "build": "run -T tsc --build",
+    "start": "NODE_OPTIONS='--experimental-specifier-resolution=node' run -T ts-node --require tsconfig-paths/register ${PROJECT_CWD}/packages/a/src/index.ts"
+  }
+}
